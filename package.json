@@ -1,0 +1,43 @@
+{
+  "name": "controle-de-dieta",
+  "version": "0.0.1",
+  "description": "Backend feito em nodejs com TypeScript",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "migration": "node --loader tsx ./node_modules/.bin/knex",
+    "knex": "node --no-warnings --loader tsx ./node_modules/knex/bin/cli.js -- migrate:make ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tchars/ControleDeDieta.git"
+  },
+  "keywords": [
+    "Dieta",
+    "TS",
+    "JS",
+    "Node"
+  ],
+  "author": "Charles J",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tchars/ControleDeDieta/issues"
+  },
+  "homepage": "https://github.com/tchars/ControleDeDieta#readme",
+  "dependencies": {
+    "@fastify/cookie": "^9.3.1",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.27.0",
+    "knex": "^3.1.0",
+    "pg": "^8.11.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "eslint": "^9.3.0",
+    "sqlite3": "^5.1.7",
+    "tsx": "^4.10.5",
+    "typescript": "^5.4.5"
+  }
+}
